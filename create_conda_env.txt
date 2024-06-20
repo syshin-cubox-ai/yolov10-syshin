@@ -1,0 +1,6 @@
+conda create -n yolov10 python=3.11 -y
+conda activate yolov10
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install -e .
+pip install huggingface-hub onnx onnxruntime-gpu onnxsim openvino wandb
+wandb login
